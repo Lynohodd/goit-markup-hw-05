@@ -469,11 +469,29 @@
             </li>
           </ul>
         </div>
+        <div class="subscribe-block">
+          <p class="subscribe-text">Subscribe</p>
+          <form class="subscribe-form">
+            <label class="subscribe-label" for="">
+              <input
+                class="subscribe-input"
+                type="email"
+                name="email"
+                placeholder="E-mail"
+              />
+            </label>
+            <button class="subscribe-button" type="submit">
+              Subscribe
+              <svg class="telegram-icon" width="24" height="24">
+                <use href="./images/icons.svg#telegram"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
 
     <!--============== MODAL ==============-->
-
     <div class="backdrop is-open">
       <div class="modal">
         <button type="button" class="modal-close">
@@ -485,13 +503,13 @@
 
         <form class="modal-feedback-form">
           <div class="form-wrapper-cont">
-            <label class="label-user-contacts" for="name">Name</label>
+            <label class="label-user-contacts" for="user-name">Name</label>
             <div class="form-user-icon-wrapper">
               <input
                 class="input-user-contacts"
                 type="text"
-                id="name"
-                name="name"
+                id="user-name"
+                name="user-name"
                 required
                 pattern="[a-zA-Zа-яА-ЯіІїЇєЄґҐʼ]+"
               />
@@ -502,7 +520,7 @@
           </div>
           <div class="form-wrapper-cont">
             <label class="label-user-contacts" for="tel">Phone</label>
-            <div>
+            <div class="form-user-icon-wrapper">
               <input
                 class="input-user-contacts"
                 type="tel"
@@ -517,7 +535,7 @@
           </div>
           <div class="form-wrapper-cont">
             <label class="label-user-contacts" for="email">Email</label>
-            <div>
+            <div class="form-user-icon-wrapper">
               <input
                 class="input-user-contacts"
                 type="email"

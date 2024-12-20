@@ -707,6 +707,10 @@ footer .part-of-logo {
   width: 100%;
   height: 40px;
 
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   width: 360px;
@@ -736,7 +740,7 @@ footer .part-of-logo {
 }
 
 .input-user-contacts:hover .form-user-icon {
-  stroke: #4d5ae5;
+  fill: #4d5ae5;
 }
 
 .form-user-icon-wrapper {
@@ -773,6 +777,13 @@ footer .part-of-logo {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  fill: transparent;
+}
+
+.privacy-policy-checkbox:checked + .privacy-policy-text .custom-checkbox {
+  border: none;
+  fill: #f4f4fd;
+  background-color: #404bbf;
 }
 
 .privacy-svg:checked {

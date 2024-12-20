@@ -472,7 +472,7 @@
         <div class="subscribe-block">
           <p class="subscribe-text">Subscribe</p>
           <form class="subscribe-form">
-            <label class="subscribe-label" for="">
+            <label class="subscribe-label">
               <input
                 class="subscribe-input"
                 type="email"
@@ -549,25 +549,31 @@
             </div>
           </div>
           <div class="form-wrapper-cont">
-            <label class="label-user-contacts" for="comment">Comment</label>
-            <div>
-              <input
-                class="input-user-contacts input-user-comment"
-                type="text"
-                id="comment"
-                name="comment"
-                placeholder="Text input"
-              />
-            </div>
+            <label class="label-user-contacts" for="user-comment"
+              >Comment</label
+            >
+            <textarea
+              class="input-user-contacts input-user-comment"
+              name="user-comment"
+              id="user-comment"
+              placeholder="Text input"
+            ></textarea>
           </div>
           <div class="privacy-policy-container">
-            <input class="privacy-policy-checkbox" type="checkbox" />
-            <p class="privacy-policy-text">
-              I accept the terms and conditions of the
-              <span
-                ><a class="pricacy-policy-link" href="">Privacy Policy</a></span
-              >
-            </p>
+            <input
+              class="privacy-policy-checkbox visually-hidden"
+              id="user-privacy"
+              type="checkbox"
+              value="true"
+              name="user-privacy"
+            />
+            <label class="privacy-policy-text" for="user-privacy"
+              ><span class="custom-checkbox">
+                <svg class="privacy-svg" width="10" height="8">
+                  <use href="./images/icons.svg#marker"></use></svg></span
+              >I accept the terms and conditions of the
+              <a class="privacy-policy-link" href="">Privacy Policy</a></label
+            >
           </div>
           <button class="form-button" type="button">Send</button>
         </form>
